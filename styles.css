@@ -1,16 +1,120 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
-
 body {
-    font-family: "Raleway" , sans-serif;
+	font-family: "Raleway", sans-serif;
 }
 
 footer {
-    background-color: #F2F2F2;
+	background-color: #F2F2F2;
 }
+
 .accommodation {
-    background-color: #F2F2F2;
+	background-color: #F2F2F2;
 }
 
-         
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
 
-     
+.menuNav {
+	display: flex;
+	margin-right: 3%;
+}
+
+header ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-left: auto;
+	color: #0065fc;
+}
+
+header ul li a:hover {
+	border-top: 2px solid #0065fc;
+	padding-top: 21px;
+	color: #0065fc;
+}
+
+header ul li {
+	margin-left: 28px;
+}
+
+header a {
+	text-decoration: none;
+	color: black;
+}
+
+.inscrire a {
+	color: #0065fc;
+	margin-right: 0%;
+}
+
+.inscrire a:hover {
+	border-top: 2px solid #0065fc;
+	padding-top: 21px;
+}
+
+.inscrire {
+	padding-left: 28px;
+}
+
+
+/* les filtres de recherche */
+
+.filters-title {
+	font-size: 1.3em;
+	margin: 0 20px 0 0;
+}
+
+.nom-filtre {
+	font-family: "Raleway", "Sans serif";
+	font-weight: bold;
+	padding-right: 1.5em;
+	padding-left: 0.5em;
+	cursor: pointer;
+}
+
+.bouton-filtre:hover {
+	background: #0065fc;
+	color: #fff;
+	transition: 0.4s ease-in-out;
+	cursor: pointer;
+}
+
+.bouton-filtre {
+	display: flex;
+	align-items: center;
+	width: auto;
+	margin-right: 2em;
+	border: 2px solid #d9d9d9;
+	border-radius: 2em;
+	font-weight: bold;
+}
+
+.filtres {
+	display: flex;
+	align-items: center;
+}
+
+.logo-filtre {
+	padding: 15px 15px;
+	border-radius: 50%;
+	background-color: #DEEBFF;
+	cursor: pointer;
+}
+
+.filtres i {
+	color: #0065FC;
+}
+
+.gimmick {
+	font-size: large;
+}
+
+.gimmick h1 {
+	font-weight: bolder;
+}
+
