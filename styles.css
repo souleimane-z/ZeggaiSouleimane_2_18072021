@@ -15,12 +15,13 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
+	align-items: stretch;
 }
 
 .menuNav {
 	display: flex;
 	margin-right: 3%;
+    
 }
 
 header ul {
