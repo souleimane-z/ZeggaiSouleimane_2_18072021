@@ -27,6 +27,7 @@
             </div>
         </header>
         <main>
+
             <div class="gimmick">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
@@ -285,5 +286,31 @@
                 </div>
             </div>
         </footer>
+        
+        <!--Bouton : RETOUR EN HAUT-->
+
+        <button onclick="topFunction()" id="tothetop" title="Retour en haut de la page"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+        <script>
+            
+            var mybutton = document.getElementById("tothetop");
+            
+            
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
     </body>
 </html>

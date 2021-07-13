@@ -1,7 +1,7 @@
 
 body {
 	font-family: "Raleway" , sans-serif;
-	width: 1350px;
+	width: 100%;
 	display: block;
 }
 
@@ -243,4 +243,20 @@ header a {
 @font-face {
 	font-family: "Raleway-VariableFont";
 	src: url("fonts/Raleway/Raleway-VariableFont_wght.ttf");
+}
+
+#tothetop {
+	display: none; 
+	position: fixed; 
+	bottom: 20px;
+	right: 30px; 
+	z-index: 99; 
+	border: none;
+	outline: none; 
+	background-color: #DEEBFF; 
+	color: #0065FC; 
+	cursor: pointer; 
+	padding: 15px; 
+	border-radius: 11px;
+	font-size: 29px; 
 }
