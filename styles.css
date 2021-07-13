@@ -217,10 +217,20 @@ header a {
 }
 
 /* Hébergements & Les Plus Populaires */
-.accommodation {
-	background-color: #F2F2F2;
+aside {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 }
 
+.aside_accommodation , .aside_popular {
+	background-color: #F2F2F2;
+	
+}
+
+.aside_accommodation {
+	justify-content: space-between;
+}
 
 
 
@@ -244,6 +254,9 @@ header a {
 	font-family: "Raleway-VariableFont";
 	src: url("fonts/Raleway/Raleway-VariableFont_wght.ttf");
 }
+
+
+/*Bouton pour aller en haut de la page*/
 
 #tothetop {
 	display: none; 
