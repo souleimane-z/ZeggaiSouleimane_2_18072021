@@ -214,25 +214,61 @@ header a {
 
 #infos-p {
 	font: normal 16px "Raleway", sans-serif;
+	padding-left: 10px;
 }
 
 /* Hébergements & Les Plus Populaires */
-aside {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-}
+
 
 .aside_accommodation , .aside_popular {
 	background-color: #F2F2F2;
-	
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .aside_accommodation {
-	justify-content: space-between;
+	border-radius: 15px;
+    width: 65%;
+    padding: 30px;
+    margin: 0 25px 0 0;
+}
+.accomodation-cases {
+	width: 30%;
+  width: calc(33.3% - 10px);
+  background: white;
+  border-radius: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 0 5px 20px 5px;
+  box-shadow: 0 5px 16px #0000002e;
+  transition: all 1s ease;
 }
 
+.accomodation-cases:hover {
+	transform: scale(1.09)
+}
+.img-acc {
+	background-color: white;
+	border-radius: 15px 15px 0px 0px;
+	transition-duration: 0.1s;
+	cursor: pointer;
+	width: 100%;
+	height: 120px;
+	object-fit: cover;
+  }
 
+.accomodation-cases p {
+	margin: 5px 7px;
+	
+}
+aside a {
+	text-decoration: none;
+	font : normal 15px "Raleway", sans-serif;
+}
+aside i {
+	font-size: 17px;
+	margin: 3px 10px;
+}
 
 /*importation des polices utilisés*/ 
 @font-face {
