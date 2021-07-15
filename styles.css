@@ -218,13 +218,17 @@ header a {
 }
 
 /* Hébergements & Les Plus Populaires */
+.accomodationPopular{
+	display: flex;
+}
+.hebergements-aside{
+	display: flex;
+	flex-wrap: wrap;
+}
 
 
 .aside_accommodation , .aside_popular {
 	background-color: #F2F2F2;
-	display: flex;
-	flex-wrap: wrap;
-	align-content : flex-start;
 }
 
 .aside_accommodation {
@@ -238,8 +242,8 @@ header a {
 	
 }
 .accomodation-cases {
-	width: 35%;
-  width: calc(33.3% - 10px);
+  flex-basis: 32%;
+  height: 230px;
   background: white;
   border-radius: 20px;
   padding: 5px;
@@ -272,9 +276,11 @@ aside a {
 	color: black;
 }
 aside i {
-	font-size: 20px;
-	margin: 3px 10px;
+	font-size: 11px;
 	color: #0065FC;
+	justify-content: flex-start;
+	margin-top: 10px;
+	margin-bottom: 0;
 }
 
 .grey-stars {
