@@ -14,10 +14,6 @@ section ,
 	margin-left: 50px;
 	margin-right: 50px;
 }
-footer {
-	background-color: #F2F2F2;
-}
-
 h6 {
 	display : none;
 }
@@ -423,6 +419,39 @@ aside i {
 .activity-five {}
 .activity-six {}
 
+
+/* Footer */
+/* Footer */
+/* Footer */
+footer {
+	background-color: #F2F2F2;
+}
+
+  
+.footer-blocs {
+    display: flex;
+    max-width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+.footer-bloc1 ,.footer-bloc2 , .footer-bloc3 {
+    width: 40%;
+  }
+  
+  .footerTitre {
+    display: block;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  
+  .footer-liens {
+    color: black;
+    display: block;
+    margin: 15px 0;
+    font-weight: 500;
+	text-decoration: none;
+  }
 
 /*importation des polices utilisés*/ 
 /*importation des polices utilisés*/ 
