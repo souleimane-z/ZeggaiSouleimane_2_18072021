@@ -3,14 +3,28 @@ body {
 	font-family: "Raleway" , sans-serif;
 	width: 100%;
 	display: block;
-}
 
+}
+header, 
+section , 
+.filtres , 
+.gimmick , 
+.research-box , 
+.infos {	
+	margin-left: 50px;
+	margin-right: 50px;
+}
 footer {
 	background-color: #F2F2F2;
 }
 
+h6 {
+	display : none;
+}
 
 
+/* Mise en forme du Header */
+/* Mise en forme du Header */
 /* Mise en forme du Header */
 
 .nav-right {
@@ -25,7 +39,7 @@ footer {
 	margin-right: 3%;
     display: flex;
 }
-
+header { margin-top: 20px;}
 header ul {
 	display: flex;
 	list-style: none;
@@ -79,7 +93,11 @@ header a {
 	
 }
 
+
 /* Titre dans header */
+/* Titre dans header */
+/* Titre dans header */
+
 .gimmick {
 	
 	margin-bottom: -20px;
@@ -137,6 +155,9 @@ header a {
 
 
 /* les filtres de recherche */
+/* les filtres de recherche */
+/* les filtres de recherche */
+
 .filtres {
 	display: flex;
 	align-items: center;
@@ -172,8 +193,6 @@ header a {
 	font-weight: bold;
 }
 
-
-
 .logo-filtre {
 	padding: 15px 15px;
 	border-radius: 50%;
@@ -190,14 +209,15 @@ header a {
 }
 
 
-
-
-
 /*Infos*/
+/*Infos*/
+/*Infos*/
+
 .infos {
 	display: flex;
 	align-items: center;
 	margin-top: 8px;
+	margin-bottom: 15px;
 }
 
 #infos-logo {
@@ -217,10 +237,18 @@ header a {
 	padding-left: 10px;
 }
 
-/* Hébergements & Les Plus Populaires */
+
+/* Hébergements */
+/* Hébergements */
+/* Hébergements */
 .accomodationPopular{
 	display: flex;
 }
+.accomodation{
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
 .hebergements-aside{
 	display: flex;
 	flex-wrap: wrap;
@@ -232,23 +260,20 @@ header a {
 }
 
 .aside_accommodation {
-    
-	flex: 2;
 	border-radius: 15px;
-    width: 65%;
-	height: 800px;
+    flex-basis: 70%;
+	height: 700px;
     padding: 30px;
-    margin: 0 25px 0 0;
-	
+    margin: 0 25px 25px 0;	
 }
 .accomodation-cases {
-  flex-basis: 32%;
-  height: 230px;
+  flex-basis: 300px;
+  height: 210px;
   background: white;
   border-radius: 20px;
   padding: 5px;
   box-sizing: border-box;
-  margin: 0 5px 20px 5px;
+  margin: 0px 20px 20px 100px;
   box-shadow: 0 5px 16px #3a38382e;
   transition: all 1s ease;
 }
@@ -270,6 +295,14 @@ header a {
 	margin: 5px 7px;
 	
 }
+.loadmore h5 {
+	margin-top: 100px; 
+	font: bold 20px "Raleway", sans-serif;
+}
+.loadmore a:hover{
+	transition: 0.4s;
+	text-decoration: underline;
+}
 aside a {
 	text-decoration: none;
 	font : normal 15px "Raleway", sans-serif;
@@ -286,36 +319,113 @@ aside i {
 .grey-stars {
 	color: #c7d3e5;
 } 
+#hebergements {
+	margin-top: -10px;
+	margin-bottom: 55px;
+}
 
+
+/*Populaires*/
+/*Populaires*/
+/*Populaires*/
 .aside_popular {
+	display: flex;
+	flex-wrap: wrap;
 	flex: 1;
-	width: 30%;
-	height: 800px;
+	width: 25%;
+	height: 700px;
+    padding: 30px;
+    margin: 0 25px 25px 0;
+	border-radius: 15px;
 }
 .popular-cases {
-	width: 35%;
-	width: calc(33.3% - 10px);
+	flex-basis: 30%;
 	background: white;
 	border-radius: 20px;
-	padding: 5px;
+	padding: 4px;
 	box-sizing: border-box;
-	margin: 0 5px 20px 5px;
+	margin: 0px 25px 25px 0px;
 	box-shadow: 0 5px 16px #3a38382e;
 	transition: all 1s ease;
+    flex-direction: row;
+	height: 150px;
   }
 .popular-cases:hover {
 	transform: scale(1.09)
 }
 .img-pop {
-	background-color: white;
-	border-radius: 15px 15px 0px 0px;
-	transition-duration: 0.1s;
-	cursor: pointer;
-	width: 100%;
-	height: 120px;
+	border-radius: 15px;
+	width: 40%;
+	height: 95%;
 	object-fit: cover;
+	float: left;
+	padding-right: 10px;
+	margin: 5px;
   
 }
+.aside-title {
+	display: flex;
+	color: black;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: -25px;
+}
+.aside-title .chart-line {
+	justify-content: flex-end;
+	margin-left: 5rem;
+	color: black;
+}
+.popular-cases p {
+	text-decoration: none;
+	font : normal 18px "Raleway", sans-serif;
+	color: black;
+	margin: 15px 7px;
+}
+.popular-stars {
+	margin-top: 30px;
+}
+
+
+/* Activités */
+/* Activités */
+/* Activités */
+.Les_Activites {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: yellow;
+	
+	flex-direction: row;
+
+}
+
+.activity-cases {
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 15px;
+	background: white;
+	box-sizing: border-box;
+}
+
+.img-activity {
+	object-fit: cover;
+	border-radius: 15px;
+	align-self: center;
+}
+.Les_Activites figcaption {
+	
+}
+.activity-one {
+	float: right;
+}
+.activity-two {}
+.activity-three {}
+.activity-four {}
+.activity-five {}
+.activity-six {}
+
+
+/*importation des polices utilisés*/ 
+/*importation des polices utilisés*/ 
 /*importation des polices utilisés*/ 
 @font-face {
     font-family: "Raleway";
@@ -339,7 +449,7 @@ aside i {
 
 
 /*Bouton pour aller en haut de la page*/
-
+/*Bouton pour aller en haut de la page*/
 #tothetop {
 	display: none; 
 	position: fixed; 
