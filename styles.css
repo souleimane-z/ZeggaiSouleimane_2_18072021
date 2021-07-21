@@ -381,7 +381,7 @@ aside a {
 	height: 95%;
 	object-fit: cover;
 	float: left;
-	padding-right: 10px;
+	padding-right: 8px;
 	margin: 5px;
 }
 
@@ -534,6 +534,60 @@ footer {
 }
 
 
+/* Responsive : petits écrans 
+   Responsive : petits écrans 
+   Responsive : petits écrans */
+
+@media (min-width: 330px) and (max-width: 768px) {
+
+	
+	header,
+	section,
+	.filtres,
+	.gimmick,
+	.research-box,
+	.infos {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	h6 { display: none;}
+
+	.nav-right {
+		display: grid;
+	}
+	.menuNav { 
+		display: flex;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		margin-left: auto;
+		color: #0065fc;
+	}
+	header {
+		margin-top: 15px;
+	}
+		
+	header ul {
+		border-bottom: 2.5px solid #0065fc;
+	}
+		
+	header ul li a:hover {
+		border-bottom: 2.5px solid #0065fc;
+      border-top: none;
+      padding-bottom: 5px;
+	}
+		
+	header ul li {
+		margin-left: 0;
+      padding: 10px 46px 5px 11px;
+	}
+		
+	header a {
+		text-decoration: none;
+		color: black;
+	}
+}
 /*importation des polices utilisés*/
 /*importation des polices utilisés*/
 /*importation des polices utilisés*/
