@@ -406,9 +406,10 @@ body {
  }
  
  .popular-stars {
-	margin-top: 1.5vw;
+	margin-top: 1.5vh;
 	font-size: 13px;
 	color: #0065fc;
+	align-selfs: flex-end;
  }
  
  .case-1, .case-2, .case-3 {
@@ -509,6 +510,7 @@ body {
  
  footer {
 	background-color: #f2f2f2;
+	
  }
  
  .footer-blocs {
@@ -516,6 +518,8 @@ body {
 	max-width: 100%;
 	padding: 0 2px 0px;
 	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
  }
  
  .footer-bloc1,
