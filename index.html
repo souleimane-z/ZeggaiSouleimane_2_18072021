@@ -3,10 +3,12 @@
     <head>
         <!--Déclaration de l'encodage-->
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width , initial-scale=1.0 ">
         <!-- Ce qui s'affiche sur l'onglet -->
         <title>Reservia</title>
         <!-- Link vers feuille CSS -->
         <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" type="text/css" href="queries.css" />
         <!-- Intégration des icones FontAwesome -->
         <script src="https://kit.fontawesome.com/327560cffb.js" crossorigin="anonymous"></script>
     </head>
@@ -88,9 +90,9 @@
             <!--HÉBERGEMENTS-->
             <!--HÉBERGEMENTS-->
             <!--HÉBERGEMENTS-->
-            <section class="accomodationPopular accomodation">
+            <section class="accomodationPopular">
                 <h6>.</h6>
-                <aside class="aside_accommodation">
+                <aside class="aside_accommodation accomodation">
                     <h2 id="hebergements">Hébergements à Marseille</h2>
                     <div class="hebergements-aside">
                         <figure class="accomodation-cases">
@@ -207,26 +209,30 @@
                                 </a>
                             </figcaption>
                         </figure>
-                        <div class="loadmore">
-                            <a href="#">
-                                <h5>Afficher plus</h5>
-                            </a>
-                        </div>
-                    </div>
-                </aside>
+                      
+            </div>  
+            <div class="loadmore">
+            <a href="#" >Afficher plus</a>
+        </div>
+     </aside>
+                
                 <!-- POPULAIRES -->
                 <!-- POPULAIRES -->
                 <!-- POPULAIRES -->
                 <aside class="aside_popular popular">
-                    <div class="aside-title">
-                        <h2>Les plus populaires</h2>
-                        <i class="fas fa-chart-line chart-line"></i>
-                    </div>
-                    <div>
-                        <figure class="popular-cases">
+                 
+                 <h2 class="aside-title">
+                     Les plus populaires 
+                     <i class="fas fa-chart-line"></i> 
+                </h2>
+                      
+                   
+                    <div class="popular-aside">
+                        <figure class="popular-cases case-1">
+                         
                             <img class="img-pop" src="img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
-                            <figcaption>
-                                <a href="#">
+                            <figcaption><a href="#"> 
+                                
                                     <p>
                                         <strong> Hôtel Le soleil du matin </strong>
                                     </p>
@@ -239,15 +245,19 @@
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star stars grey-stars"></i>
                                     </div>
-                                </a>
-                            </figcaption>
+                                </a> 
+                            </figcaption> 
+                        
+                      
                         </figure>
-                        <figure class="popular-cases">
+                        <figure class="popular-cases case-2">
+                            
+                            
                             <img class="img-pop" src="img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
-                            <figcaption>
-                                <a href="#">
+                            <figcaption><a href="#">
+                                
                                     <p>
-                                        <strong> Au coeur de l'eau Chambres d'hôtes </strong>
+                                        <strong> Au coeur de l'eau <br> Chambres d'hôtes </strong>
                                     </p>
                                     <p> Nuit à partir de 71 <strong>&euro;</strong>
                                     </p>
@@ -259,14 +269,19 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                 </a>
-                            </figcaption>
+                            </figcaption> 
+                       
+                    
                         </figure>
-                        <figure class="popular-cases">
+                        <figure class="popular-cases case-3">
+                            
+                            
+                            
                             <img class="img-pop" src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel tout bleu et Blanc">
                             <figcaption>
                                 <a href="#">
                                     <p>
-                                        <strong> Hôtel tout bleu et Blanc </strong>
+                                        <strong> Hôtel tout bleu et <br>Blanc </strong>
                                     </p>
                                     <p> Nuit à partir de 68 <strong>&euro;</strong>
                                     </p>
@@ -277,9 +292,12 @@
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star stars grey-stars"></i>
                                     </div>
-                                </a>
+                                </a> 
                             </figcaption>
-                        </figure>
+                           
+                       
+                     
+                    </figure>
                     </div>
                 </aside>
             </section>

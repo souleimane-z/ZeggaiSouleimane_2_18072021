@@ -1,0 +1,38 @@
+/* Responsive : smartphones petits écrans 
+   Responsive : smartphones petits écrans */
+
+   @media only screen and (max-width: 480px) {
+
+   }
+
+
+/* Responsive : smartphones écrans plus larges  
+   Responsive : smartphones écrans plus larges */
+
+   @media only screen and (max-width: 767px) {
+      
+     
+
+}
+
+
+/* Responsive : tablettes  
+   Responsive : tablettes */
+
+   @media only screen and (max-width: 1023px) {
+.accomodation {
+    width: 100%;
+}
+}
+
+
+/* Responsive : tablettes avec écrans plus larges  
+   Responsive : tablettes avec écrans plus larges */
+
+   @media only screen and (max-width: 1200px) {
+    .accomodation {
+        width: 70%;
+    }
+    .popular { width: 60%;}
+   .popular-stars { margin-top: 5px;}
+}
