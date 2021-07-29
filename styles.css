@@ -381,7 +381,7 @@ body {
  
  .img-pop {
 	border-radius: 20px 0 0 20px;
-	width: 30%;
+	width: 40%;
 	height: 100%;
 	padding-right: 15px;
 	object-fit: cover;
@@ -560,12 +560,25 @@ body {
    Responsive : tablettes */
 
    @media only screen and (max-width: 1199px) {
+	   
 	   .accomodationPopular {
 		display: grid;
 		
 	   }
 	   .accomodation {
-		   width: 100%;
+		margin: 0;
+	   }
+	   .accomodation-cases {
+		   height: 225px;
+	   }
+	   
+	   .aside_accommodation {
+		   padding: 0;
+	   }
+	   .accomodation-cases p {
+		font-size: 15px;
+		font-family: "Raleway", sans-serif;
+		
 	   }
 	   .popular {
 		   order : -1;
@@ -576,7 +589,8 @@ body {
 		display: flex;
 		flex-basis: 70%;
 		flex-wrap: wrap;
-
+		padding: 0;
+		margin: 0;
 	   }
 	   .case-1, .case-2, .case-3 {
 		   margin-right: -200px;
@@ -584,8 +598,20 @@ body {
 		}
 }
 
+/* Responsive : smartphones petits écrans 
+   Responsive : smartphones petits écrans */
 
+   @media only screen and (max-width: 480px) {
+	header {
+		display: flex;
+        position: relative;
+	}
+	.logo { align-self: flex-start; margin: 0;}
+	.signup {
+		position: absolute;
+	}
 
+ }
 
 
  /* importation des polices utilisés

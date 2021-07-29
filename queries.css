@@ -2,6 +2,13 @@
    Responsive : smartphones petits écrans */
 
    @media only screen and (max-width: 480px) {
+      .menuNav {
+         justify-content: flex-start;
+         float: left;
+      }
+      .logo {
+         
+      }
 
    }
 
