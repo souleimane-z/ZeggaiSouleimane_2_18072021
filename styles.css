@@ -8,9 +8,9 @@ body {
  }
  
  header,
- section,
  .filtres,
  .gimmick,
+ section,
  .research-box,
  .infos {
 	padding: 0 50px;
@@ -167,6 +167,7 @@ body {
  
  .filtres {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	margin-top: 30px;
  }
@@ -255,7 +256,7 @@ body {
  
  .accomodation {
 	margin-left: 0px;
-	margin-right: 5.8%;
+	margin-right: 3%;
  }
  
  .hebergements-aside {
@@ -263,7 +264,7 @@ body {
 	flex-wrap: wrap;
 	margin-bottom: 0;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
  }
  
  .aside_accommodation,
@@ -274,13 +275,13 @@ body {
  
  .aside_accommodation {
 	border-radius: 15px;
-	flex-basis: 80%;
+	flex-basis: 60%;
 	padding: 15px;
 	
  }
  
  .accomodation-cases {
-	flex-basis: 26%;
+	flex-basis: 30%;
 	height: 240px;
 	background: white;
 	border-radius: 20px;
@@ -359,8 +360,10 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	border-radius: 15px;
-	flex-basis: 20%;
+	flex-basis: 35%;
 	padding: 4px;
+	align-items: center;
+	justify-content: center;
  }
  .popular-aside {
 	align-items: center;
@@ -404,16 +407,19 @@ body {
 	margin-top: 10px;
 	margin-bottom: 5px;
  }
- 
+ .p1 {
+	font-size : 18px;
+	padding-right: 70px;
+ }
  .popular-stars {
-	margin-top: 1.5vh;
+	margin-top: 1.5rem;
 	font-size: 13px;
 	color: #0065fc;
 	align-self: flex-end;
  }
  
  .case-1, .case-2, .case-3 {
-	width: 400px;
+	width: 500px;
 	height: 150px;
  }
  
@@ -422,10 +428,13 @@ body {
  /* Activités */
  /* Activités */
  
+.section_activites { margin-top: 60px;}
+
  .activites {
 	color: black;
-	font: bolder 15px "Raleway", sans-serif;
+	font: bolder 18px "Raleway", sans-serif;
 	padding-left: 8px;
+	
  }
  
  .Les_Activites {
@@ -436,7 +445,7 @@ body {
 	justify-content: space-between;
 	height: 496px;
 	margin-top: 30px;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 	box-sizing: border-box;
  }
  
@@ -458,7 +467,7 @@ body {
  }
  
  .img-activity-small_1 {
-	height: 200px;
+	height: 190px;
  }
  
  .img-activity-small_2 {
@@ -472,36 +481,36 @@ body {
  .img-activity-small_4 {
 	height: 180px;
  }
- 
- .activity-places {
-	margin-top: 5px;
-	margin-bottom: 5px;
-	margin-left: 10px;
+
+ .activity-places p {
+	margin-left: 20px;
 	font: bold 15px "Raleway", sans-serif;
+	justify-content: center;
+	align-items: center;
  }
- 
+
  .activity-five {
-	margin: 0px 0px 31px;
+	margin: 0px 0px 10px;
  }
  
  .activity-two {
-	margin: 0px 0px 31px;
+	margin: 0px 0px 10px;
  }
  
  .activity-four {
-	margin: 0px 0px 31px;
+	margin: 0px 0px 10px;
  }
  
  .activity-one {
-	margin: 0px 0px 31px;
+	margin: 0px 0px 10px;
  }
  
  .activity-three {
-	margin: 0px 0px 31px;
+	margin: 0px 0px 10px;
  }
  
  .activity-six {
-	margin: 0px 0px 31px;
+	margin: 0px 0px 10px;
  }
  
  /* Footer
@@ -559,11 +568,23 @@ body {
 /* Responsive : tablettes  
    Responsive : tablettes */
 
-   @media only screen and (max-width: 1199px) {
+   @media only screen and (min-width : 768px) and (max-width : 1024px) {
 	   
+	   section { 
+		padding : 0px;
+	}
+
+	   .filtres { 
+		display: flex;
+		flex-wrap: wrap;
+	}
+       .bouton-filtre { 
+	    margin: 5px;
+    }
+
 	   .accomodationPopular {
 		display: grid;
-		
+		width: 100%;
 	   }
 	   .accomodation {
 		margin: 0;
@@ -579,6 +600,9 @@ body {
 		font-size: 15px;
 		font-family: "Raleway", sans-serif;
 		
+	   }
+	   .aside_popular {
+		   padding: 0;
 	   }
 	   .popular {
 		   order : -1;
