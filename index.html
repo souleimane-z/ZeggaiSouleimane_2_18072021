@@ -13,12 +13,13 @@
     </head>
     <body>
         <header>
-            <div class="nav-right">
+           <div class="nav-right">
                 <a href="index.html">
                     <img class="logo" alt="reservia" src="img/Reservia.svg" />
-                </a>
+                </a> 
+            
                 <nav class="menuNav">
-                    <ul>
+                    <ul class="select-witch-section">
                         <li>
                             <a class="nav-hebergements" href="#hebergements">Hébergements</a>
                         </li>
@@ -377,28 +378,5 @@
                 </div>
             </div>
         </footer>
-        <!--Bouton : RETOUR EN HAUT-->
-        <button onclick="topFunction()" id="tothetop" title="Retour en haut de la page">
-            <i class="fa fa-arrow-up" aria-hidden="true"></i>
-        </button>
-        <script>
-            var mybutton = document.getElementById("tothetop");
-            window.onscroll = function() {
-                scrollFunction()
-            };
-
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    mybutton.style.display = "block";
-                } else {
-                    mybutton.style.display = "none";
-                }
-            }
-
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-        </script>
     </body>
 </html>

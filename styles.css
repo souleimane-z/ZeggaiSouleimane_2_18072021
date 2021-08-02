@@ -25,21 +25,20 @@ body {
  /* Mise en forme du Header */
  /* Mise en forme du Header */
  
- .nav-right {
+ .nav-right, .menuNav {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+	
  }
  
  .menuNav {
-	font-size: 1.1rem;
-	margin-right: 3%;
 	display: flex;
  }
  
  header {
-	margin-top: 15px;
+	align-items: stretch;
  }
  
  header ul {
@@ -53,7 +52,7 @@ body {
  
  header ul li a:hover {
 	border-top: 3px solid #0065fc;
-	padding-top: 21px;
+	padding-top: 7px;
 	color: #0065fc;
 	font-weight: bolder;
  }
@@ -69,14 +68,14 @@ body {
  
  .nav-hebergements {
 	border-top: 3px solid #0065fc;
-	border-bottom: 0px solid #0065fc;
-	padding-top: 15px;
+	text-decoration: none;
+	padding-top: 7px;
 	color: #0065fc;
  }
  
  .signup a {
 	color: #0065fc;
-	margin-right: 0%;
+	margin-right: 0;
 	font-weight: bold;
  }
  
@@ -88,11 +87,11 @@ body {
  
  .signup {
 	padding-left: 30px;
-	float: right;
  }
  
  .logo {
 	cursor: pointer;
+	align-content: center;
  }
  
 
@@ -554,26 +553,27 @@ body {
 
 
 
- /* Responsive : tablettes avec écrans plus larges  
-   Responsive : tablettes avec écrans plus larges */
 
-   @media only screen and (max-width: 1600px) and (min-width: 1200px) {
-	.accomodation-cases p , .stars-acc {
-		font-size: 11px;
-	}
-	.stars-acc {
-		align-items: flex-start;
-	}
-}
 /* Responsive : tablettes  
    Responsive : tablettes */
 
-   @media only screen and (min-width : 768px) and (max-width : 1024px) {
+   @media only screen  and (max-width : 1024px) {
 	   
-	   section { 
-		padding : 0px;
+	header,
+	.filtres,
+	.gimmick,
+	section,
+	.research-box,
+	.infos { 
+		padding : 0;
 	}
-
+	header,
+	.filtres,
+	.gimmick,
+	.research-box,
+	.infos {
+     padding: 0 7px;
+	}
 	   .filtres { 
 		display: flex;
 		flex-wrap: wrap;
@@ -609,6 +609,11 @@ body {
 		   margin-bottom: 10px;
 		   width: 100%;
 	   }
+	   .popular-cases {
+		   align-content: center;
+		   justify-content: center;
+		   width: 100%;
+	   }
 	   .popular-aside {
 		display: flex;
 		flex-basis: 70%;
@@ -616,28 +621,66 @@ body {
 		padding: 0;
 		margin: 0;
 	   }
-	   .case-1, .case-2, .case-3 {
-		   margin-right: -200px;
-		   width: 100%;
-		}
+	   .signup {
+		   padding-right: 10px;
+	   }
+
 }
 
 /* Responsive : smartphones petits écrans 
+   Responsive : smartphones petits écrans 
    Responsive : smartphones petits écrans */
 
-   @media only screen and (max-width: 480px) {
-	header {
-		display: flex;
-        position: relative;
+   @media only screen and (min-width : 320px) and (max-width : 480px) {
+
+	header,
+	.filtres,
+	.gimmick,	
+	.research-box,
+	.infos {
+	   padding: 0 7px;
 	}
-	.logo { align-self: flex-start; margin: 0;}
-	.signup {
-		position: absolute;
-	}
+	section { padding: 0;}
+.nav-right {
+	width: 100%;
+	margin: 0;
+	display: grid;
+      padding-top: 5px;
+}
 
- }
+.signup { 
+	position: absolute;     
+	top: 29px;
+	right: 30px;
+}
 
+   nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	margin-top: 2px;
+  }
 
+  nav ul {
+	border-bottom: 3px solid #f2f2f2;
+  }
+
+  header ul li {
+	margin-left: 0;
+	padding: 10px 46px 5px 11px;
+  }
+
+  header ul li a:hover  {
+	border-bottom: 2px solid #0065fc;
+      border-top: none;
+      padding-bottom: 5px;
+  }
+  .nav-hebergements:hover {
+	  border-top: none;
+  }
+
+}
  /* importation des polices utilisés
     importation des polices utilisés
     importation des polices utilisés */
@@ -661,24 +704,7 @@ body {
 	font-family: "Raleway-VariableFont";
 	src: url("fonts/Raleway/Raleway-VariableFont_wght.ttf");
  }
+
  
- /*Bouton pour aller en haut de la page*/
- /*Bouton pour aller en haut de la page*/
- /*Bouton pour aller en haut de la page*/
- 
- #tothetop {
-	display: none;
-	position: fixed;
-	bottom: 20px;
-	right: 30px;
-	z-index: 99;
-	border: none;
-	outline: none;
-	background-color: #deebff;
-	color: #0065fc;
-	cursor: pointer;
-	padding: 15px;
-	border-radius: 11px;
-	font-size: 29px;
- }
+
  
