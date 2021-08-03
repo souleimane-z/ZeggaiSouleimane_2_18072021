@@ -125,7 +125,8 @@ body {
 	background-color: #deebff;
 	padding: 7px 7px;
 	width: 26px;
-	text-align: center;
+	align-items: center;
+	padding: 13px;
 	border-radius: 1.2rem 0 0 1.2rem;
  }
  
@@ -149,10 +150,10 @@ body {
 	font: bold 15px "Raleway", sans-serif;
 	background-color: #0065fc;
 	color: #fff;
-	border-radius: 0 11px 11px 0;
+	border-radius: 0 15px 15px 0;
 	cursor: pointer;
 	width: auto;
-	margin: 0 -2px;
+	padding: 13px;
  }
  
  .icon-research {
@@ -559,12 +560,8 @@ body {
 
    @media only screen  and (max-width : 1024px) {
 	   
-	header,
-	.filtres,
-	.gimmick,
-	section,
-	.research-box,
-	.infos { 
+
+	section { 
 		padding : 0;
 	}
 	header,
@@ -624,8 +621,25 @@ body {
 	   .signup {
 		   padding-right: 10px;
 	   }
+	   .icon-research {
+		display: flex;
+		align-items: center;
+		border-radius: 8px;
+		padding: 10px;
+		font: bold 18px ;
+		margin-left: -10px;
+		box-shadow: none;
+	 }
+	 .button-research { display: none;}
+	
+	.icon-location {
+		align-items: center;
+		padding: 10px;
+
+	}
 
 }
+
 
 /* Responsive : smartphones petits écrans 
    Responsive : smartphones petits écrans 
@@ -649,7 +663,9 @@ body {
     padding-top: 5px;
 
 }
-
+.logo{
+	padding-bottom: 20px;
+}
 	.signup { 
 	position: absolute;     
 	top: 20px;
@@ -661,32 +677,70 @@ body {
 }
 
    .select-witch-section {
-	display: flex;
-	justify-content: baseline;
+	justify-content: space-evenly;
+	position: absolute;
 	width: 100%;
 	margin-top: 2px;
 	border-bottom: 3px solid #f2f2f2;
 	border-top: none;
 	margin-left: 0;
 	padding: 10px;
+	
   }
 
   .select-witch-section a:hover  {
-	border-top: 3px solid #0065fc;
-	padding-top: 7px;
+	border-bottom: 3px solid #0065fc;
+	border-top: none;
+	padding: 10px;
 	color: #0065fc;
 	font-weight: bolder;
   }
   .nav-hebergements { 
-	margin-right: 150px;
 	border-top: none;
+	padding: 0;
+	margin: 0;
   }
-  .nav-activites {
-	  margin-right: 200px;
-  }
+  .popular-cases {
+	margin: 10px 10px;
+	width: 100%;
+}
+.p1 {
+	padding: 0;
+	font: bold 15px "raleway", sans-serif;
+}
+.popular-stars {
+	margin-top: 55px;
+}
+.popular-aside p {
+	font: normal 15px "raleway", sans-serif;
+}
+.aside_popular {
+	display: grid;
+ 	padding: 0;
+	 margin: 0;
+	 width: 100%;
+}
+.aside-title { 
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.hebergements-aside {
+	display: grid;
+
+}
+.accomodation-cases {
+	width: 100%;
+	
+}
 
 
 }
+
+main {
+	padding-top: 30px
+}
+
  /* importation des polices utilisés
     importation des polices utilisés
     importation des polices utilisés */
@@ -710,7 +764,3 @@ body {
 	font-family: "Raleway-VariableFont";
 	src: url("fonts/Raleway/Raleway-VariableFont_wght.ttf");
  }
-
- 
-
- 
