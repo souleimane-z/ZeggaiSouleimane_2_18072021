@@ -44,9 +44,7 @@ body {
  header ul {
 	display: flex;
 	list-style: none;
-	padding: 0;
 	margin: 0;
-	margin-left: auto;
 	color: #0065fc;
  }
  
@@ -59,6 +57,8 @@ body {
  
  header ul li {
 	margin-left: 30px;
+	
+	padding: 0;
  }
  
  header a {
@@ -67,12 +67,15 @@ body {
  }
  
  .nav-hebergements {
-	border-top: 3px solid #0065fc;
 	text-decoration: none;
 	padding-top: 7px;
-	color: #0065fc;
  }
- 
+
+ .nav1 {
+	 border-top: 3px solid #0065fc;
+	 color: #0065fc;
+ }
+
  .signup a {
 	color: #0065fc;
 	margin-right: 0;
@@ -430,12 +433,7 @@ body {
  
 .section_activites { margin-top: 60px;}
 
- .activites {
-	color: black;
-	font: bolder 18px "Raleway", sans-serif;
-	padding-left: 8px;
-	
- }
+
  
  .Les_Activites {
 	display: flex;
@@ -452,14 +450,14 @@ body {
  .activity-cases {
 	width: 23%;
 	background-color: white;
-	border-radius: 1.25rem;
+	border-radius: 15px;
 	box-shadow: 0 0 16px #0000002e;
  }
  
  .img-activity {
 	width: 100%;
 	object-fit: cover;
-	border-radius: 1.25rem 1.25rem 0 0;
+	border-radius: 15px 15px 0 0;
  }
  
  .img-activity-big {
@@ -624,20 +622,26 @@ body {
 	   .icon-research {
 		display: flex;
 		align-items: center;
+		
 		border-radius: 8px;
-		padding: 10px;
+		padding: 13px;
 		font: bold 18px ;
 		margin-left: -10px;
-		box-shadow: none;
+		border: none;
+	 }
+	 .research-box{
+		 display: flex;
+		 justify-content: center;
 	 }
 	 .button-research { display: none;}
 	
 	.icon-location {
 		align-items: center;
 		padding: 10px;
-
 	}
-
+	.gimmick {
+		margin-bottom: 10px;
+	 }
 }
 
 
@@ -647,7 +651,7 @@ body {
 
    @media only screen and (min-width : 320px) and (max-width : 480px) {
 
-	header,
+	
 	.filtres,
 	.gimmick,	
 	.research-box,
@@ -677,14 +681,16 @@ body {
 }
 
    .select-witch-section {
+	   width: 100%;
 	justify-content: space-evenly;
 	position: absolute;
-	width: 100%;
-	margin-top: 2px;
+
+	
 	border-bottom: 3px solid #f2f2f2;
+	
 	border-top: none;
-	margin-left: 0;
-	padding: 10px;
+	margin: 0;
+	padding: 10px 0;
 	
   }
 
@@ -698,11 +704,23 @@ body {
   .nav-hebergements { 
 	border-top: none;
 	padding: 0;
-	margin: 0;
+	width: 100%;
   }
+.menuNav {
+	
+}
+  header ul {
+	margin-left: 0px;
+	padding: 0;
+ }
+ .filters-title {
+	margin-right: 0;
+	padding: 10px;
+ }
+
   .popular-cases {
 	margin: 10px 10px;
-	width: 100%;
+	width: 80%;
 }
 .p1 {
 	padding: 0;
@@ -714,29 +732,104 @@ body {
 .popular-aside p {
 	font: normal 15px "raleway", sans-serif;
 }
+.aside-title {
+	font: 1200 22px "Raleway", sans-serif;
+}
 .aside_popular {
 	display: grid;
  	padding: 0;
 	 margin: 0;
-	 width: 100%;
 }
 .aside-title { 
 	display: flex;
-	justify-content: space-evenly;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 300px;
 }
-
+.aside_accommodation {
+	background-color: transparent;
+	width: 100%;
+}
 .hebergements-aside {
 	display: grid;
 
 }
-.accomodation-cases {
-	width: 100%;
-	
-}
+.aside-title i { margin-right : 0;}
 
 main {
 	padding-top: 30px
 }
+.accomodationPopular {
+	width : 100%
+}
+.accomodation-cases {
+	flex-basis: 0;
+	height: 200px;
+	width: 350px;
+	padding: 0;
+	margin: 10px 0 ;
+	border-radius: 15px;
+}
+.img-acc {
+	height: 110px;
+}
+#hebergements {
+	font: 1200 22px "Raleway", sans-serif;
+}
+.stars-acc {
+	margin-top: 10px;
+}
+.section_activites {
+margin: 0 8px;
+}
+.Les_Activites {
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+.activity-cases {
+	width: 350px;
+	height: 130px;
+	
+}
+#activites {
+	padding-left: 8px;
+}
+.img-activity-big,  .img-activity-small_1, .img-activity-small_2, .img-activity-small_3 , .img-activity-small_4 {
+	height: 150px;
+ }
+
+
+.popular-cases:hover {
+	transform: none;
+ }
+
+ .accomodation-cases:hover {
+	transform: none;
+ }
+ .footer-blocs {
+	 display: grid;
+	justify-content: flex-start;
+	margin-left : 15px;
+ }
+ .footer-bloc1,
+ .footer-bloc2,
+ .footer-bloc3 {
+	width: 100%;
+	margin: 8px 0;
+ }
+ .footer-liens {
+	 margin: 8px 0;
+ }
+ .footer-title {
+	 display: grid;
+	 margin-bottom: 10px;
+ }
+ footer {
+	 width: 100%;
+ }
 }
 
 
