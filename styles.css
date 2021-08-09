@@ -275,16 +275,13 @@ body {
 	background-color: #f2f2f2;
 	
  }
- 
  .aside_accommodation {
 	border-radius: 15px;
-	flex-basis: 60%;
-	padding: 15px;
-	
+	flex-basis: 70%;
  }
  
  .accomodation-cases {
-	flex-basis: 30%;
+	flex-basis: 28%;
 	height: 240px;
 	background: white;
 	border-radius: 20px;
@@ -315,14 +312,12 @@ body {
  }
  
  .loadmore {
-	margin-bottom: 11px;
 	padding: 20px;
  }
  
  .loadmore a {
 	font: 18px "Raleway-bold", sans-serif;
 	text-decoration: none;
- 
 	color: black;
  }
  .loadmore:hover {
@@ -358,23 +353,23 @@ body {
  /* Populaires
 	Populaires
 	Populaires  */
- 
+ .popular-aside {
+	 display: flex;
+	 flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+ }
  .aside_popular {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	border-radius: 15px;
-	flex-basis: 35%;
-	padding: 4px;
-	align-items: center;
-	justify-content: center;
+	flex-basis: 25%;
+	padding: 0px;
  }
- .popular-aside {
-	align-items: center;
-	justify-content: center;
- }
+
  .popular-cases {
 	padding: 5px 5px 5px 5px;
-    
 	background: white;
 	border-radius: 20px;
 	box-shadow: 0 5px 16px #3a38382e;
@@ -400,10 +395,11 @@ body {
 	width: 100%;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding: 20px 20px 0 20px;
+	padding: 20px;
+    margin-bottom: -35px;
  }
  
- .popular-cases p {
+ .pop-p {
 	text-decoration: none;
 	font: normal 20px "Raleway", sans-serif;
 	color: black;
@@ -415,14 +411,12 @@ body {
 	padding-right: 70px;
  }
  .popular-stars {
-	margin-top: 1.5rem;
 	font-size: 13px;
 	color: #0065fc;
-	align-self: flex-end;
  }
- 
+
  .case-1, .case-2, .case-3 {
-	width: 500px;
+	width: 400px;
 	height: 150px;
  }
  
@@ -556,7 +550,7 @@ body {
 /* Responsive : tablettes  
    Responsive : tablettes */
 
-   @media only screen  and (max-width : 1024px) {
+   @media only screen  and (max-width : 1200px) {
 	   
 
 	section { 
@@ -566,7 +560,8 @@ body {
 	.filtres,
 	.gimmick,
 	.research-box,
-	.infos {
+	.infos ,
+	.section_activites {
      padding: 0 7px;
 	}
 	   .filtres { 
@@ -585,7 +580,8 @@ body {
 		margin: 0;
 	   }
 	   .accomodation-cases {
-		   height: 225px;
+			flex-basis: 40%;
+		   height: 230px;
 	   }
 	   
 	   .aside_accommodation {
@@ -596,18 +592,29 @@ body {
 		font-family: "Raleway", sans-serif;
 		
 	   }
+	   .accomodation .p1 {
+		   font-size: 15px;
+	   }
+	   .p1 {
+		   padding-right: 0;
+	   }
 	   .aside_popular {
 		   padding: 0;
+		   
+	   }
+	   .aside-title {
+		   margin-bottom: 10px;
 	   }
 	   .popular {
 		   order : -1;
 		   margin-bottom: 10px;
 		   width: 100%;
-	   }
-	   .popular-cases {
 		   align-content: center;
 		   justify-content: center;
+	   }
+	   .popular-cases {
 		   width: 100%;
+		   height: 180px;
 	   }
 	   .popular-aside {
 		display: flex;
@@ -619,28 +626,30 @@ body {
 	   .signup {
 		   padding-right: 10px;
 	   }
-	   .icon-research {
-		display: flex;
-		align-items: center;
-		
-		border-radius: 8px;
-		padding: 13px;
-		font: bold 18px ;
-		margin-left: -10px;
-		border: none;
-	 }
-	 .research-box{
-		 display: flex;
-		 justify-content: center;
-	 }
-	 .button-research { display: none;}
-	
+
 	.icon-location {
 		align-items: center;
 		padding: 10px;
 	}
 	.gimmick {
 		margin-bottom: 10px;
+	 }
+	 .section_activites {
+		 padding: 20px;
+	 }
+	 .Les_Activites {
+		display: flex;
+		flex-wrap: wrap;
+		height: 1000px;
+		margin-top: 30px;
+		margin-bottom: 50px;
+		
+	 }
+	 .activity-cases {
+		width: 48%;
+	 }
+	 .img-activity-big,  .img-activity-small_1, .img-activity-small_2, .img-activity-small_3 , .img-activity-small_4 {
+		height: 250px;
 	 }
 }
 
@@ -650,16 +659,21 @@ body {
    Responsive : smartphones petits écrans */
 
    @media only screen and (min-width : 320px) and (max-width : 480px) {
-
+   
+	body, footer {overflow-x: hidden;}
 	
 	.filtres,
 	.gimmick,	
 	.research-box,
 	.infos {
-	   padding: 0 7px;
+	   padding: 0;
 	}
-	section { padding: 0;}
-
+	section { 
+	   padding: 0;
+	}
+    header {
+	   padding: 0;
+    }
 	.nav-right {
 	width: 100%;
 	margin: 0;
@@ -679,18 +693,29 @@ body {
 	font-weight: bolder;
 	border-bottom: 3px solid #0065fc;
 }
+.icon-research {
+	display: flex;
+	align-items: center;
+	
+	border-radius: 8px;
+	padding: 13px;
+	font: bold 18px ;
+	margin-left: -10px;
+	border: none;
+ }
 
+.research-box{
+	display: flex;
+	justify-content: center;
+}
+.button-research { display: none;}
    .select-witch-section {
+	   position: absolute;
 	   width: 100%;
+	display: flex;
 	justify-content: space-evenly;
-	position: absolute;
-
-	
-	border-bottom: 3px solid #f2f2f2;
-	
-	border-top: none;
-	margin: 0;
 	padding: 10px 0;
+    border-bottom: 3px solid #f2f2f2;
 	
   }
 
@@ -701,24 +726,25 @@ body {
 	color: #0065fc;
 	font-weight: bolder;
   }
-  .nav-hebergements { 
-	border-top: none;
-	padding: 0;
-	width: 100%;
-  }
 
-  header ul {
-	margin-left: 0px;
-	padding: 0;
- }
+.nav1 {
+	border-top: none;
+	width: 100%;
+}
+.nav2 {
+	border-top: none;
+	width: 100%;
+}
+
  .filters-title {
 	margin-right: 0;
 	padding: 10px;
+	margin-right: 500px;
  }
 
   .popular-cases {
 	margin: 10px 10px;
-	width: 80%;
+	width: 90%;
 }
 .p1 {
 	padding: 0;
@@ -731,7 +757,8 @@ body {
 	font: normal 15px "raleway", sans-serif;
 }
 .aside-title {
-	font: 1200 22px "Raleway", sans-serif;
+	font: bolder 22px "Raleway", sans-serif;
+
 }
 .aside_popular {
 	display: grid;
@@ -743,6 +770,7 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 300px;
+	margin-bottom: 10px;
 }
 .aside_accommodation {
 	background-color: transparent;
@@ -772,31 +800,26 @@ main {
 	height: 110px;
 }
 #hebergements {
-	font: 1200 22px "Raleway", sans-serif;
+	font: bolder 22px "Raleway", sans-serif;
 }
 .stars-acc {
 	margin-top: 10px;
 }
-.section_activites {
-margin: 0 8px;
-}
 .Les_Activites {
-	height: 100%;
+	height: 1400px;
 	display: flex;
 	flex-wrap: wrap;
-	align-content: center;
-	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: 50px;
 }
 .activity-cases {
 	width: 350px;
-	height: 130px;
+	height: 200px;
 	
 }
-#activites {
-	padding-left: 8px;
-}
+
 .img-activity-big,  .img-activity-small_1, .img-activity-small_2, .img-activity-small_3 , .img-activity-small_4 {
-	height: 150px;
+	height: 140px;
  }
 
 
@@ -816,7 +839,7 @@ margin: 0 8px;
  .footer-bloc2,
  .footer-bloc3 {
 	width: 100%;
-	margin: 8px 0;
+
  }
  .footer-liens {
 	 margin: 8px 0;
@@ -826,7 +849,7 @@ margin: 0 8px;
 	 margin-bottom: 10px;
  }
  footer {
-	 width: 100%;
+	 padding: 0;
  }
 }
 
