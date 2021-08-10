@@ -38,6 +38,7 @@ body {
  }
  
  header {
+	padding-top: 45px;
 	align-items: stretch;
  }
  
@@ -50,7 +51,7 @@ body {
  
  header ul li a:hover {
 	border-top: 3px solid #0065fc;
-	padding-top: 7px;
+	padding-top: 50px;
 	color: #0065fc;
 	font-weight: bolder;
  }
@@ -74,6 +75,7 @@ body {
  .nav1 {
 	 border-top: 3px solid #0065fc;
 	 color: #0065fc;
+	 padding-top: 50px;
  }
 
  .signup a {
@@ -84,7 +86,7 @@ body {
  
  .signup a:hover {
 	border-top: 3px solid #0065fc;
-	padding-top: 21px;
+	padding-top: 50px;
 	font-weight: bolder;
  }
  
