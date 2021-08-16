@@ -62,6 +62,7 @@ header ul li {
 }
 
 header a {
+	margin: 0 30px;
 	text-decoration: none;
 	color: black;
 }
@@ -126,7 +127,7 @@ header a {
 
 .icon-location {
 	font-size: 20px;
-	background-color: #deebff;
+	background-color: #f2f2f2;
 	padding: 7px 7px;
 	width: 26px;
 	align-items: center;
@@ -315,6 +316,8 @@ header a {
 
 .loadmore {
 	padding: 20px;
+	margin-bottom: 30px;
+	margin-top: 10px;
 }
 
 .loadmore a {
@@ -403,7 +406,7 @@ aside a {
 	width: 100%;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding: 20px;
+	padding: 20px 40px;
 	margin-bottom: -35px;
 }
 
@@ -581,7 +584,12 @@ footer {
 	.gimmick,
 	.research-box,
 	.infos {
-		padding: 0 7px;
+		padding: 0 20px;
+	}
+	header a {
+		margin: 0 10px;
+		text-decoration: none;
+		color: black;
 	}
 	.filtres {
 		display: flex;
@@ -686,9 +694,9 @@ footer {
    Responsive : smartphones petits écrans */
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-	body,
-	footer {
-		overflow-x: hidden;
+	
+	h2 {
+		font-weight: bolder;
 	}
 	.filtres,
 	.logo,
@@ -740,6 +748,7 @@ footer {
 	.icon-research {
 		display: flex;
 		align-items: center;
+		
 		border-radius: 8px;
 		padding: 13px;
 		font: bold 18px;
@@ -748,10 +757,18 @@ footer {
 	}
 	.research-box {
 		display: flex;
+		height: 50px;
 		justify-content: center;
 	}
 	.button-research {
 		display: none;
+	}
+	.icon-location {
+		display: flex;
+		align-items: center;
+		margin: 0;
+		font-size: 22px;
+		justify-content: center;
 	}
 	.select-witch-section {
 		position: absolute;
@@ -759,7 +776,6 @@ footer {
 		display: flex;
 		justify-content: space-evenly;
 		padding: 10px 0;
-		
 		padding-left: 0;
 		padding-right: 0;
 	}
@@ -771,11 +787,16 @@ footer {
 	header ul li:hover {
 		border-bottom: 3px solid #0065fc;
 		border-top: none;
-		padding: 10px;
+		padding-bottom: 10px;
 		color: #0065fc;
 		font-weight: bolder;
 	}
+	.nav2 {
+		width: 50%;
+		border-bottom: none;
+	}
 	.nav1 {
+		width: 50%;
 		border-top: none;
 	}
 	.nav2 {
@@ -820,6 +841,7 @@ footer {
 		flex-wrap: wrap;
 		justify-content: space-between;
 		width: 300px;
+		padding: 20px;
 		margin-bottom: 10px;
 	}
 	.aside_accommodation {
@@ -831,6 +853,7 @@ footer {
 	}
 	.aside-title i {
 		margin-right: 0;
+	    padding: 0;
 	}
 	main {
 		width: 100%;
@@ -849,11 +872,14 @@ footer {
 	#hebergements {
 		font: bolder 22px "Raleway", sans-serif;
 	}
+	.loadmore {
+		margin-bottom: 0;
+	}
 	.stars-acc {
 		justify-content: space-between;
 	}
 	.section_activites {
-		padding: 20px;
+		padding: 0 20px 20px 20px;
 	}
 	.Les_Activites {
 		display: flex;
@@ -865,6 +891,9 @@ footer {
 	.activity-cases {
 		width: 100%;
 		height: 200px;
+	}
+	.section_activites {
+		margin-top: 20px;
 	}
 	.img-activity-big,
 	.img-activity-small_1,
@@ -899,6 +928,32 @@ footer {
 	footer {
 		padding: 0;
 	}
+	.gimmick {
+		margin-left: 10px;
+	}
+	.gimmick h1 {
+		font-size: 20px;
+	}
+	.gimmick p {
+		font-size: 15px;
+	}
+	.filters-title {
+		margin-left: -10px;
+	}
+	.filtres {
+		margin-left: 10px;
+	}
+	.nom-filtre {
+		font-size: 1em;
+	}
+	.infos {
+		margin-left: 10px;
+	}
+	body,
+	footer {
+		overflow-x: hidden;
+	}
+
 }
 
 
