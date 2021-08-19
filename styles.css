@@ -33,9 +33,6 @@ h6 {
 	align-items: center;
 }
 
-.menuNav {
-	display: flex;
-}
 
 header {
 	padding-top: 45px;
@@ -540,7 +537,7 @@ footer {
 .footer-bloc2,
 .footer-bloc3 {
 	width: 32%;
-	margin: 20px 0;
+	margin: 25px 0;
 }
 
 .footer-title {
@@ -551,7 +548,7 @@ footer {
 .footer-liens {
 	color: black;
 	display: block;
-	margin: 8px 0;
+	margin: 10px 0;
 	font-weight: 500;
 	text-decoration: none;
 }
@@ -686,6 +683,7 @@ footer {
 	header ul li a:hover {
 		padding-top: 10px;
 	}
+
 }
 
 
